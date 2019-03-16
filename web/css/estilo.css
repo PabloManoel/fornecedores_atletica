@@ -1,9 +1,23 @@
-
-/* itens da lista */
-.descricao-lista h3 {
-	font-size: 40px;
+html, body{
+	height: 100%;
 }
 
-body{
-	background-color: black;
+/* ------------------------------------------------- */ 
+/* itens da lista */
+/* ------------------------------------------------- */ 
+.thumbnail img{
+	border-radius: 3%;	
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #6E6E6E;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.lista-cor-intercalado{
+	background-color: #E6E6E6;
 }
