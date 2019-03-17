@@ -4,6 +4,7 @@
 	<title></title>
 	<!-- <link rel="stylesheet" type="text/css" href="../css/reset.css"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="../css/sidebar.css">
@@ -67,9 +68,83 @@
 
 		<div class="container-fluid">
 			<!-- botao filtros -->
-			<button type="button" class="btn btn-default btn-lg btn-block ">
-				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Filtros
-			</button>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Filtros
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							
+							<form>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Palavra-chave</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Insira a palavra-chave">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Código do Produto</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Fornecedor</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Código do Produto">
+								</div>
+
+								<!-- faixa de preço -->
+								<div class="form-group">
+									<label for="example1">Faixa de preço</label>
+									<input type="range" class="form-control" id="example1" min="0" max="10000">
+
+								</div>
+
+								<!-- avaliacao e UF-->
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="form-group avaliacao-estrela-descricao">
+											<label>Avaliação</label>							
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group avaliacao-estrela-descricao">
+											<label>UF</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="form-group">
+											<span class="fa fa-star avaliacao-estrela checked"></span>
+											<span class="fa fa-star avaliacao-estrela checked"></span>
+											<span class="fa fa-star avaliacao-estrela checked"></span>
+											<span class="fa fa-star avaliacao-estrela"></span>
+											<span class="fa fa-star avaliacao-estrela"></span>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group">
+											<select name="SP">
+												<option value="RJ">Sao Paulo</option>
+												<option value="RJ">Rio de Janeiro</option>
+												<option value="BH">Belo Horizonte</option>
+												<option value="SC">Santa Catarina</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<input type="submit" class="btn btn-lg btn-block" value="Filtrar">	
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ########################################################## -->
+
+			
 			<br/>
 
 			<!-- OBJETO LISTA -->
@@ -97,7 +172,7 @@
 								</div>
 							</form>
 							<a href="produtos-detalhes.html" class="btn btn-primary btn-lg btn-block">
-							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes 
+								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes 
 							</a>
 						</div>
 					</div>
@@ -129,7 +204,7 @@
 								</div>
 							</form>
 							<a href="produtos-detalhes.html" class="btn btn-primary btn-lg btn-block">
-							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes 
+								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes 
 							</a>
 						</div>
 					</div>
@@ -161,7 +236,7 @@
 								</div>
 							</form>
 							<a href="produtos-detalhes.html" class="btn btn-primary btn-lg btn-block">
-							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes 
+								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes 
 							</a>
 						</div>
 					</div>
