@@ -6,130 +6,154 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/sidebar.css">
 </head>
 <body>
-<header>
-	<nav class="navbar navbar-default">
+	<header>
+		<nav class="navbar navbar-default">
 			<div class="container">	
 
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#id_colapse_navbar" aria-expanded="false">
+					<button id="menu-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#id_colapse_navbar" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="navbar-brand" href="">Clube das Lojinhas</a>
+					<a class="navbar-brand " href="">Clube das Lojinhas</a>
 				</div>
 			</div>
 		</nav>
 
-</header>
-<div class="container-fluid">
+		<!-- #################################################### -->
+		<!--<a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-bookmark"></i></a>-->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<!-- <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a> -->
+				<li class="sidebar-brand">
+					<a href="#">Project name</a>
+				</li>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
 
-  <!-- OBJETO LISTA -->
-  <div class="thumbnail lista-cor-intercalado">
+		<!-- #################################################### -->
+
+	</header>
+	<div class="container-fluid">
+
+		<!-- OBJETO LISTA -->
+		<div class="thumbnail lista-cor-intercalado">
 			<div class="row">	  
-	      <div class="col-sm-6">
-	      	<img src="../imagens/bandana-modelo.jpg" alt="..." class="img-responsive">
-	      </div>
-	      <div class="col-sm-6">
-		      <div class="caption descricao-lista">
-						<h3 class="text-centerx">Bandana Modelo</h3>
+				<div class="col-sm-6">
+					<img src="../imagens/bandana-modelo.jpg" alt="..." class="img-responsive">
+				</div>
+				<div class="col-sm-6">
+					<div class="caption descricao-lista">
+						<h3 class="text-center">Bandana Modelo</h3>
 						<form>
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Produto</label>
-						    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Fornecedor</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Cliente</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Valor Unitário</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário">
-						  </div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Produto</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Fornecedor</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Cliente</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Valor Unitário</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário">
+							</div>
 						</form>
-		        <button type="button" class="btn btn-primary btn-lg btn-block"> + Detalhes </button>
-		      </div>
-	      </div>
+						<button type="button" class="btn btn-primary btn-lg btn-block"> + Detalhes </button>
+					</div>
+				</div>
 			</div>
-  </div>
-  <!-- FIM OBJETO -->
-  <!-- OBJETO LISTA -->
-  <div class="thumbnail">
+		</div>
+		<!-- FIM OBJETO -->
+		<!-- OBJETO LISTA -->
+		<div class="thumbnail">
 			<div class="row">	  
-	      <div class="col-sm-6">
-	      	<img src="../imagens/samba-fem.jpg" alt="..." class="img-responsive">
-	      </div>
-	      <div class="col-sm-6">
-		      <div class="caption descricao-lista">
+				<div class="col-sm-6">
+					<img src="../imagens/samba-fem.jpg" alt="..." class="img-responsive">
+				</div>
+				<div class="col-sm-6">
+					<div class="caption descricao-lista">
 						<h3 class="text-center">Samba canção Fem</h3>
 						<form>
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Produto</label>
-						    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Fornecedor</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Cliente</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Valor Unitário</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário">
-						  </div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Produto</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Fornecedor</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Cliente</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Valor Unitário</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário">
+							</div>
 						</form>
-		        <button type="button" class="btn btn-primary btn-lg btn-block"> + Detalhes </button>
-		      </div>
-	      </div>
+						<button type="button" class="btn btn-primary btn-lg btn-block"> + Detalhes </button>
+					</div>
+				</div>
 			</div>
-  </div>
-  <!-- FIM OBJETO -->
-  <!-- OBJETO LISTA -->
-  <div class="thumbnail lista-cor-intercalado">
+		</div>
+		<!-- FIM OBJETO -->
+		<!-- OBJETO LISTA -->
+		<div class="thumbnail lista-cor-intercalado">
 			<div class="row">	  
-	      <div class="col-sm-6">
-	      	<img src="../imagens/caneca-cone.jpg" alt="..." class="img-responsive">
-	      </div>
-	      <div class="col-sm-6">
-		      <div class="caption descricao-lista">
+				<div class="col-sm-6">
+					<img src="../imagens/caneca-cone.jpg" alt="..." class="img-responsive">
+				</div>
+				<div class="col-sm-6">
+					<div class="caption descricao-lista">
 						<h3 class="text-center">Caneca Cone</h3>
 						<form>
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Produto</label>
-						    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Fornecedor</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Cliente</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Valor Unitário</label>
-						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário">
-						  </div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Produto</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Fornecedor</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Cliente</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Valor Unitário</label>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário">
+							</div>
 						</form>
-		        <button type="button" class="btn btn-primary btn-lg btn-block"> + Detalhes </button>
-		      </div>
-	      </div>
+						<button type="button" class="btn btn-primary btn-lg btn-block"> + Detalhes </button>
+					</div>
+				</div>
 			</div>
-  </div>
-  <!-- FIM OBJETO -->
-</div>
+		</div>
+		<!-- FIM OBJETO -->
+	</div>
 
-
-
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/sidebar.js"></script>
 </body>
 </html>
