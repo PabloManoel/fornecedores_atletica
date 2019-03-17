@@ -10,14 +10,36 @@ html, body{
 }
 
 input[type=text] {
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 1px solid #6E6E6E;
-  background-color: transparent;
-  box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #6E6E6E;
+	background-color: transparent;
+	box-shadow: none;
 }
 
 .lista-cor-intercalado{
 	background-color: #E6E6E6;
+}
+
+.form-custom input{
+	width: auto;
+}
+
+input[type="text"]:read-only{
+	background-color: transparent;
+}
+
+.checked {
+  color: orange;
+}
+
+.avaliacao-estrela{
+	font-size: 18px;
+}
+
+.avaliacao-estrela-descricao{
+	margin-bottom: 0px;
+}
+
+.btn-padrao{
+	background-color: #E6E6E6
 }
