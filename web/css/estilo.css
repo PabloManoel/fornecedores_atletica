@@ -2,6 +2,13 @@ html, body{
 	height: 100%;
 }
 
+a{
+    text-decoration: none;  
+    color: black;
+    font-size: 16px !important; 
+}
+
+
 /* ------------------------------------------------- */ 
 /* itens da lista */
 /* ------------------------------------------------- */ 
@@ -41,5 +48,13 @@ input[type="text"]:read-only{
 }
 
 .btn-padrao{
-	background-color: #E6E6E6
+	background-color: #F5F5F5;
+	color: black;
+	margin-bottom: 10px;		
 }
+
+
+
+
+
+
