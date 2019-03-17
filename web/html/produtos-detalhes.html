@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/reset.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">	
+
+				<div class="navbar-header">
+					<button id="menu-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#id_colapse_navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand " href="">Clube das Lojinhas</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- #################################################### -->
+		<!--<a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-bookmark"></i></a>-->
+		<div id="sidebar-wrapper">
+			<div class="sidebar-nav">
+				<img src="../imagens/scream_queens.png" alt="..." class="img-responsive img-sidebar">
+				<!-- <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a> -->
+
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading" data-toggle="collapse" href="#collapse1">
+							<h4 class="panel-title">
+								<a>Categorias</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">Chapeus</li>
+								<li class="list-group-item">Bandeiras</li>
+								<li class="list-group-item">Canecas</li>
+								<li class="list-group-item">Roupas</li>
+								<li class="list-group-item">Acessórios</li>
+							</ul>							
+						</div>
+					</div>
+				</div>
+
+				<hr/>	
+				
+			</div>
+		</div>
+
+		<!-- #################################################### -->
+
+	</header>
+	<main>
+
+		<div class="container-fluid">
+
+			<!-- Produto -->
+			<div class="thumbnail">
+				<div class="row">
+					<div class="col-xs-12">
+						<figure>
+							<img src="../imagens/bandana-modelo.jpg" alt="..." class="img-responsive">							
+						</figure>
+					</div>
+				</div>
+				<div class="row">
+					<!-- btn amei -->							
+					<div class="col-xs-6">
+						<button type="button" class="btn btn-sm btn-default btn-block">
+							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Amei
+						</button>
+					</div>
+					<!-- btn share -->
+					<div class="col-xs-6">
+						<button type="button" class="btn btn-sm btn-default btn-block">
+							<span class="glyphicon glyphicon-share" aria-hidden="true"></span> Compartilhar
+						</button>
+					</div>
+				</div>
+			</div>	
+
+
+
+			<h3 class="text-center">Bandana Modelo</h3>
+			<form class="form-group">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Produto</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categoria do produto" readonly>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Código do produto</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Código do produto" readonly>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Fornecedor</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Fornecedor" readonly>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Cliente</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome do Cliente" readonly>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="exampleInputPassword1">Valor Unitário</label>
+							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário" readonly>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="exampleInputPassword1">Quantidade</label>
+							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor Unitário" readonly>
+						</div>
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="exampleInputPassword1">Frete</label>
+							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor do frete" readonly>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="exampleInputPassword1">UF</label>
+							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="UF" readonly>
+						</div>
+					</div>				
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Total</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Custo total da venda" readonly>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Tempo de entrega</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Tempo de entrega" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputPassword1">Observações</label>
+					<textarea class="form-control" id="exampleInputPassword1" rows="6" readonly></textarea>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group avaliacao-estrela-descricao">
+							<label>Nota Produto</label>							
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group avaliacao-estrela-descricao">
+							<label>Nota Atendimento</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group">
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela"></span>
+							<span class="fa fa-star avaliacao-estrela"></span>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group">
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+							<span class="fa fa-star avaliacao-estrela checked"></span>
+						</div>
+					</div>
+				</div>
+
+
+			</form>
+
+
+			<button type="button" class="btn btn-default btn-lg btn-block btn-padrao"> 
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contatar Fornecedor 
+			</button>
+			<br /> <!-- remover -->	
+
+			
+			<!-- FIM OBJETO -->
+		</div>
+	</main>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/sidebar.js"></script>
+</body>
+</html>
