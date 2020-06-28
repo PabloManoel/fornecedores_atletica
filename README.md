@@ -14,9 +14,6 @@ Desenvolver uma plataforma de compartilhamento de contatos e designs de produtos
 
 ## Visualização
 
-Para visualizar o estado atual do esboço acesse: 
-``` 
-https://5ef8f64e06d3b45073c5b2ef--catalogo-universitario.netlify.app/
-```
+Para acessar o preview do projeto acesse o link abaixo: 
 
-<br/>
+[https://catalogo-universitario.netlify.app/](https://catalogo-universitario.netlify.app/)
