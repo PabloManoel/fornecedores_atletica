@@ -1,0 +1,23 @@
+{
+  "name": "fornecedores_atletica",
+  "version": "1.0.0",
+  "description": "## Proposta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server web/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloManoel/fornecedores_atletica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloManoel/fornecedores_atletica/issues"
+  },
+  "homepage": "https://github.com/PabloManoel/fornecedores_atletica#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
