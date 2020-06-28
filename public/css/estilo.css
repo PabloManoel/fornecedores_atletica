@@ -1,0 +1,64 @@
+html, body{
+	height: 100%;
+}
+
+a{
+    text-decoration: none;  
+    color: black;
+    font-size: 16px !important; 
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+
+/* ------------------------------------------------- */ 
+/* itens da lista */
+/* ------------------------------------------------- */ 
+.thumbnail img{
+	border-radius: 3%;	
+}
+
+input[type=text] {
+	border: none;
+	border-bottom: 1px solid #6E6E6E;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.lista-cor-intercalado{
+	background-color: #E6E6E6;
+}
+
+.form-custom input{
+	width: auto;
+}
+
+input[type="text"]:read-only{
+	background-color: transparent;
+}
+
+.checked {
+  color: orange;
+}
+
+.avaliacao-estrela{
+	font-size: 18px;
+}
+
+.avaliacao-estrela-descricao{
+	margin-bottom: 0px;
+}
+
+.btn-padrao{
+	background-color: #F5F5F5;
+	color: black;
+	margin-bottom: 10px;		
+}
+
+
+
+
+
+
