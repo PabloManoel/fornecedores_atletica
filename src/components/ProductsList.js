@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import ProductListItem from './ProductListItem';
 import FilterSearch from './FilterSearch';
+import SideBar from './SideBar';
 
 class ProductsList extends Component {
 
@@ -41,8 +42,9 @@ class ProductsList extends Component {
 
 		return (
 			<Fragment>
+				<SideBar />
 				<div className="container-fluid">
-				<FilterSearch></FilterSearch>
+					<FilterSearch></FilterSearch>
 					{ListItems}
 				</div>
 			</Fragment>

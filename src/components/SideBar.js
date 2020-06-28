@@ -1,12 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import ListItems from "./ProductsList";
 
 function SideBar() {
 
 	return (
 		<header>
-			<Router>
 			<nav className="navbar navbar-default">
 				<div className="container">
 					<div className="navbar-header">
@@ -17,18 +14,12 @@ function SideBar() {
 							<span className="icon-bar"></span>
 							<span className="icon-bar"></span>
 						</button>
-						<Link to={"/products"} className="navbar-brand " href="index.html">Clube das Lojinhas</Link>
+						<a href="/products" className="navbar-brand">Clube das Lojinhas</a>
 					</div>
 				</div>
 			</nav>
-
-			<Switch>
-				<Route exact path={"/products"} component={ListItems}></Route>
-			</Switch>
-			</Router>
 		</header>
 	)
-
 }
 
 export default SideBar
