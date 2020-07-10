@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ProductListItem(props) {
 
@@ -32,8 +33,9 @@ function ProductListItem(props) {
 									placeholder="Tempo de entrega" value={props.data.deliveryTime} />
 							</div>
 						</form>
-						<a href={`/products/${props.data.id}`} className="btn btn-primary btn-lg btn-block">
-							<span className="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes</a>
+						{/* <Link to={`/products/${props.data.id}`} className="btn btn-primary btn-lg btn-block"></Link> */}
+						<Link to={`/products`} className="btn btn-primary btn-lg btn-block">
+							<span className="glyphicon glyphicon-plus" aria-hidden="true"></span> Detalhes</Link>
 					</div>
 				</div>
 			</div>

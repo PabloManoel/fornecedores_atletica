@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './index.css';
-import App from './App';
+import ListItems from "./components/ProductsList";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <Switch>
+        <Route path='/' exact={true} component={ListItems} />
+        <Route path='/products' component={ListItems} />
+      </Switch>
   </BrowserRouter>,
   document.getElementById('root')
 );
