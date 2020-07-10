@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './index.css';
 import ListItems from "./components/ProductsList";
+import ProductDetails from "./components/ProductDetails"
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-        <Route path='/' exact={true} component={ListItems} />
-        <Route path='/products' component={ListItems} />
+        <Route exact={true} path='/' component={ListItems} />
+        <Route exact={true} path='/products' component={ListItems} />
+        <Route path='/products/:id' component={ProductDetails} />
+
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')

@@ -58,7 +58,27 @@ input[type="text"]:read-only{
 }
 
 
+/* ############### productListItem ############### */
 
+.productListItem{
+	width: 45%;
+	height: auto;
+	display: inline-block;
+	margin: 0 2.5%;
+}
+
+@media screen and (min-width: 800px){
+	.mainList{
+		margin: 0 20%;
+	}
+
+	.productListItem{
+		width: 20%;
+		height: auto;
+		display: inline-block;
+		margin: 0 2.5%;
+	}
+}
 
 
 
