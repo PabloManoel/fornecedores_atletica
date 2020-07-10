@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function ProductListItem(props) {
 
@@ -40,8 +40,8 @@ function ProductListItem(props) {
 	)
 }
 
-function consoleChange(event) {
-	console.log("was changed");
-}
+// function consoleChange(event) {
+// 	console.log("was changed");
+// }
 export default ProductListItem;
 
